@@ -22,12 +22,6 @@ A **Java Swing GUI application** for managing employee records. It allows adding
 - JDBC (Java Database Connectivity)
 
 ---
-
-## 📁 Project Structure
-
-<pre> employee.management.system/ ├── addemployee.java # Add new employee UI & logic ├── viewemployee.java # View employee by ID ├── removeemployee.java # Remove employee by ID ├── main_class.java # Main dashboard ├── com.java # MySQL DB connection class ├── login.java # (Optional) Login screen └── icons/ # UI background image files </pre>
----
-
 ## 🧪 Database Setup
 
 Run the following in MySQL:
@@ -49,32 +43,19 @@ CREATE TABLE employee (
   education VARCHAR(100),
   designation VARCHAR(100)
 );
-
-Update the credentials in com.java:
-Connection conn = DriverManager.getConnection(
-  "jdbc:mysql://localhost:3306/employeeDB",
-  "yourUsername", "yourPassword"
-);
 ```
+**Update the credentials in com.java**:
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/employeeDB","yourUsername", "yourPassword");
+
+
 ▶️ How to Run
-Clone the repo:
+**Clone the repo**:
 git clone https://github.com/yourusername/Employee_Management_System.git
 cd Employee_Management_System
 
-Compile the files:
+**Compile the files**:
 javac employee/management/system/*.java
 
-Run the app:
+**Run the app**:
 java employee.management.system.main_class
 
-✍️ Author
-
-Lanchan J
-GitHub: Lanchu14
-
-📜 License
-This project is licensed under the MIT License.
-
-⭐ Star this repo if you find it useful!
----
-Let me know if you want the email added or screenshots section included!
